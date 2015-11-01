@@ -1,0 +1,1036 @@
+@font-face {
+    font-family: VerizonApexBook;
+    src: url('../fonts/VerizonApex-Book.otf');
+}
+
+@media only screen and (orientation : landscape) {
+    html body {
+		/*margin: 0 245px;*/
+        margin: auto;
+    }
+}
+
+/*@media only screen and (orientation : portrait) {
+	html body{
+		margin: 0 !important;
+	}
+}*/
+/*html {
+	background-image: url("../images/settings.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+*/
+
+body {
+	font-family: VerizonApexBook;
+	font-size: 15px;
+	color: #333333;
+    display: table;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.red {
+	color: #ed1c24;
+}
+
+.logo-width {
+	width: 90px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.gray {
+	color: #86878a;
+}
+
+.title-size {
+	font-size: 24px;
+}
+
+.text-field {
+	-webkit-appearance: none;
+	border: 1px solid #d2d3d4;
+	border-radius: 3px;
+	font-size: 15px;
+	padding: 10px;
+	width: 100%;
+	color: #86878a;
+}
+
+.link {
+	font-family: Helvetica Neue;
+	font-size: 13px;
+	text-align: right;
+	padding-top: 5px;
+	color: #ed1c24;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+
+.link-away {
+	font-family: Helvetica Neue;
+	font-size: 15px;
+	text-align: right;
+	margin-top: 5px;
+	color: #ed1c24;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#request-sent-page .link-away {
+	margin-left: 85px !important;
+	margin-top: -33px !important;
+	position: absolute;
+}
+
+.button {
+	-webkit-appearance: none;
+	font-family: VerizonApexBook;
+	font-size: 17px;
+	color: #fff;
+	background: #ed1c24;
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+	display: block;
+	border-radius: 3px;
+	margin-left:auto;
+	min-width:160px;
+	height:44px;
+}
+
+.button.blur1{filter: blur(0px);-webkit-filter: blur(0px)}
+.button-white{background:#FFFFFF;border:1px solid #D2D3D4;color:#ED1C24}
+.button.button-white:active{background:#F7F7F7;border:1px solid #D2D3D4}
+.button-white.gray{color:#D2D3D4;background:#F7F7F7;border:1px solid #D2D3D4}
+.button-width-195 {width: 195px}
+
+.content-padding {
+	padding: 20px 0;
+}
+
+.note {
+	color: #7c7c7c;
+	margin-top: 10px;
+}
+
+.margin-top {
+	margin-top: 10px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+
+
+.footnote {
+	margin-top: 5px;
+	color: #86878a;
+	font-size: 13px;
+	font-family: Helvetica Neue;
+	vertical-align: top;
+}
+
+.tab-item {
+	font-family: Helvetica Neue;
+	border-top: 1px solid #d2d3d4;
+	border-bottom: 1px solid #d2d3d4;
+	text-align: center;
+	padding: 5px 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.tab-item:first-child {
+	border-left: 1px solid #d2d3d4;
+	border-radius: 3px 0 0 3px;
+}
+
+.tab-item:last-child {
+	border-right: 1px solid #d2d3d4;
+	border-radius: 0 3px 3px 0;
+}
+
+.tab-item:nth-child(2n) {
+	border-right: 1px solid #d2d3d4;
+	border-left: 1px solid #d2d3d4;
+}
+
+.plan-options {
+	cursor: pointer;	
+}
+
+.plan-options > div > div {
+	padding: 10px 0;
+	border-bottom: 1px solid #d2d3d4;
+	white-space: nowrap;
+}
+
+.plan-options > div:first-child > div {
+	border-top: none;
+}
+
+.plan-options > div > div:last-child {
+	text-align: left;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.padding-left {
+	padding-left: 10px;
+}
+
+.padding-left-20 {
+	padding-left: 20px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.display-data {
+	padding: 40px 0;
+}
+
+.display-none {
+	display: none;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.caret {
+	width: 15px;	
+	vertical-align: middle;
+}
+
+.bottom-nav {
+	display: table;
+	width: 100%;
+	padding-top: 40px;
+}
+
+.bottom-nav > div > div {
+	border-top: 1px solid #d2d3d4;
+	padding: 10px 0;
+	color: #595a5d;
+	cursor: pointer;
+}
+
+.bottom-nav > div:last-child > div {
+	border-bottom: 1px solid #d2d3d4;
+}
+
+.account-table {
+	margin-top: 5px;
+	background: #eeeeee;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.scrollable {
+	overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+	height: 200px;
+	border: 1px solid #d2d3d4;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 5px;
+	padding: 10px 12px 10px 10px;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.padding-top {
+	padding-top: 10px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.review-total {
+	font-size: 18px;
+}
+
+.review-table > div > div {
+	width: 25%;
+	text-align: right;
+} 
+
+.review-table > div > div:first-child {
+	text-align: left;
+	width: 50%;
+} 
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+
+.tooltip {
+	font-family: Helvetica Neue;
+	font-size: 15px;
+	color: #595a5d;
+	border: 1px solid #ececec;
+	text-align: left;
+	padding: 20px;
+	border-radius: 5px 5px 5px 5px;
+	background: white;
+	max-width: 350px;
+    box-shadow: 6px 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-img {
+	height: 15px;
+	cursor: pointer;
+}
+
+.tooltop-icon {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.x {
+	height: 10px;
+	vertical-align: middle;
+	padding-left: 15px;
+}
+
+.arrow-down {
+	margin-top: -1px;
+	margin-right: 8px;
+}
+
+.arrow-down-left {
+	margin-top: -1px;
+	margin-left: 22px;
+}
+
+.arrow-up {
+	margin-bottom: -1px;
+	margin-right: 8px;
+    transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.plan-summary-heading {
+	font-size: 24px;	
+	margin-top: 30px;	
+}
+
+.overage {
+	font-size: 12px;
+	border-top: 1px solid #d2d3d4;
+	padding: 10px 0;
+}
+
+.link-table {
+	display: table;
+}
+
+.link-table > div > div:last-child {
+	cursor: pointer;
+	padding-left: 5px;
+}
+
+.border-right {
+	border-right: 1px solid #d2d3d4;
+}
+
+.padding {
+	padding: 5px;
+}
+
+.tooltip-size {
+	font-family: Helvetica Neue;
+	font-size: 13px;
+}
+
+.cvv-image {
+	width: 170px;
+}
+
+/* #previous:before{
+	content:"< ";
+} */
+
+#wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#content {
+	position: relative;
+	padding: 0 20px;
+	background: white;
+	height: 550px;
+	min-width: 500px;
+	max-width: 500px;
+	overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#title-bar {
+	font-family: Helvetica Neue;
+	font-size: 15px;
+	font-weight: bold;
+	background: #e6e6e6;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+#pleaseWait{
+		height: 100%;
+		background-color: white;
+    	opacity:0.8;
+    	z-index: 10000;
+    	width:100%;
+    	position:absolute;
+    	top:0;
+    	left:0; 
+}
+
+#pleaseWait span {
+	color: black;
+	display: block;
+	font-size: 40px;
+	padding-bottom: 5px;
+	padding-left: 28%;
+	padding-top: 45%;	
+}
+#pleaseWait img{
+	height: 50px;
+    padding-left: 44%;
+}
+
+#back-bar {
+	font-family: Helvetica Neue;
+	font-size: 15px;
+	background: #ffffff;
+	padding: 10px 20px;
+	border-top:1px solid #eee;
+}
+
+#logo {
+	padding-bottom: 10px;
+}
+
+#title-text {
+	vertical-align: bottom;
+	padding-left: 20px;
+	font-size: 24px;
+	padding-top: 3px;
+}
+
+#my-verizon-tabs {
+	padding: 0 60px;
+}
+
+#my-verizon-tabs .tab-item {
+	width: 50%;
+}
+
+#new-account-tabs {
+	padding: 0 60px;
+}
+
+#new-account-tabs .tab-item {
+	width: 50%;
+}
+
+#new-account-tabs .tab-item.red {
+	font-weight:bold;
+}
+
+#existing-tabs {
+	padding: 0 20px;
+}
+
+#existing-tabs .tab-item {
+	width: 33%;
+}
+
+#signin-tabs {
+	padding: 0 60px;
+}
+
+#signin-tabs .tab-item {
+	width: 50%;
+}
+
+#existing-plan-page .bottom-nav {
+	padding-top: 10px;
+}
+
+#my-verizon-more-tabs {
+	padding: 0 60px;
+}
+
+#account-overview-nav {
+	padding-top: 20px;
+}
+
+#how-much {
+	text-align: left;
+	margin-top: 20px;	
+}
+
+#corp-liable-tooltip {
+	position: absolute;
+	top: -130px;
+	left: 180px;
+}
+
+#mobile-number-tooltip {
+	position: absolute;
+	top: 30px;
+	right: 5px;
+}
+
+#ME-right-tooltip { /* legacy account */
+	position: absolute;
+	top: -180px;
+	left: 46px;
+}
+
+#how-much-tooltip { /* legacy account */
+	position: absolute;
+	top: -160px;
+	left: -5px;
+}
+
+#what-happens-tooltip { /* legacy account */
+	position: absolute;
+	top: -122px;
+	left: -5px;
+}
+
+#change-mind-tooltip { /* legacy account */
+	position: absolute;
+	top: -122px;
+	left: 10px;
+}
+
+#more-how-much-tooltip {
+	position: absolute;
+	top: -165px;
+	left: -4px;
+}
+
+#more-change-mind-tooltip {
+	position: absolute;
+	top: -121px;
+	left: 10px;
+}
+
+#confirmation-tooltip {
+	position: absolute;
+	top: 147px;
+	right: 5px;	
+}
+
+#email-optin-tooltip {
+	position: absolute;
+	top: 305px;
+	left: 146px;
+}
+
+#user-info-page #email-optin-tooltip {
+    position: absolute;
+    top: -145px;
+    left: 95px;
+}
+
+#email-arrow-down {
+	margin-left: 19px;
+}
+
+#why-verizon-tooltip {
+	position: absolute;
+	top: -160px;
+	left: 60px;
+}
+
+#more-everything{  /*new-ME-right-tooltip*/
+	position: absolute;
+	top: -102px;
+	left: 42px;
+}
+
+#how-much-data { /* new-how-much-tooltip*/
+	position: absolute;
+	top: -160px;
+	left: -3px;
+}
+
+#change-my-mind { /*new-change-mind-tooltip*/
+	position: absolute;
+	top: -86px;
+	left: 10px;
+}
+
+#GB-of-free { /*verizon-cloud-tooltip*/
+	position: absolute;
+	top: -65px;
+	left: 86px;
+}
+
+#verizon-cloud-arrow {
+	margin-right: 23px;
+}
+
+#prepaid-tooltip {
+	position: absolute;
+	top: 268px;
+	left: 0;
+}
+
+#prepaid-how-much-tooltip {
+	position: absolute;
+	top: 380px;
+	left: 17px;
+}
+
+#prepaid-change-mind-tooltip {
+	position: absolute;
+	top: 400px;
+	left: 30px;
+}
+
+#myverizon-tooltip {
+	position: absolute;
+	top: 57px;
+	left: 50px;
+}
+
+#legacy-how-much-tooltip { /* legacy-plan-options */
+	position: absolute;
+	top: -123px;
+	left: -3px;
+}
+
+#legacy-change-mind-tooltip { /* legacy-plan-options */
+	position: absolute;
+	top: -125px;
+	left: 10px;
+}
+
+#total-tooltip {
+	position: absolute;
+	top: -365px;
+	right: -20px;
+}
+
+#taxes-tooltip {
+	position: absolute;
+	top: -220px;
+	left: -10px;
+}
+
+#taxes-tooltip_account_page {
+    position: absolute;
+    top: -255px;
+    left: 10px;
+}
+
+#activation-fee-tooltip {
+	position: absolute;
+	top: -125px;
+	left: 78px;
+}
+
+#more-taxes-tooltip {
+	position: absolute;
+	top: 200px;
+	left: 11px;
+}
+
+#more-activation-fee-tooltip {
+	position: absolute;
+	top: 390px;
+	left: 98px;
+}
+
+#existing-show-more-button {
+	margin-bottom: 20px;
+}
+
+#cvv-tooltip {
+	position: absolute;
+	top: 60px;
+	right: 5px;
+}
+
+#account-taxes-tooltip {
+	position: absolute;
+	top: 179px;
+	left: 11px;
+}
+
+#account-activation-fee-tooltip {
+	position: absolute;
+	top: 73px;
+	left: 98px;
+}
+
+#account-more-taxes-tooltip {
+	position: absolute;
+	top: 20px;
+	left: -11px;
+}
+
+#account-more-activation-fee-tooltip {
+	position: absolute;
+	top: -125px;
+	left: -30px;
+}
+
+#review-taxes-tooltip {  /** legacy-to-more-everything-review-changes-page **/
+	position: absolute;
+	top: -250px;
+	left: -10px;
+}
+
+#review-activation-fee-tooltip { /** legacy-to-more-everything-review-changes-page **/
+	position: absolute;
+	top: -125px;
+	left: 78px;
+}
+
+#prepaid-device-tooltip {
+	position: absolute;
+	top: -102px;
+	left: 154px;
+}
+
+.customInput{
+	width:94% !important;
+}
+		  
+.customTooltip{
+	display: inline-block;
+	padding-left: 2px;
+	vertical-align: middle;
+	width: 0;
+}
+
+#security-tooltip {
+	left: 125px;
+	position: absolute;
+	top: 114px;
+}
+
+.arrow-down.customDown{
+	margin-left:355px;
+}
+
+/**********************************/
+#switching-show-more-button, #keep-my-existing-button {
+    width: 185px;
+}
+
+#more-questions, #account-sum-tax-row {
+    position: relative;
+}
+
+input.button:active {
+    background:#D40100;
+}
+
+.highlighted {
+    font-weight:bold;
+}
+
+.button.gray {
+    color: #D2D3D4;
+	background:#F7F7F7;
+	border:1px solid #D2D3D4;
+}
+
+.button.gray:active {
+	background:#F7F7F7;
+}
+
+.blur2 {
+    filter:blur(2px);
+    -webkit-filter:blur(2px);
+}
+
+.blur1 {
+    filter:blur(1px);
+    -webkit-filter:blur(1px);
+}
+
+input.ng-invalid.ng-touched {
+    border:solid 2px orangered;
+}
+
+.inputErrMsg {
+    padding:0 10px;
+    color:red;
+}
+
+.padding-zero {
+    padding:0px;
+}
+
+.relative {
+    position: relative;
+}
+
+.inputMask {
+    position:absolute;
+    left: 10px;
+    top: 13px;
+    background-color: rgba(255,255,255,1);
+    color: rgba(134, 135, 138, 0.60);
+    font-weight:400;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 20px;
+
+}
+
+::-webkit-input-placeholder {
+    font-family: sans-serif;
+}
+:-moz-placeholder {
+    font-family: sans-serif;
+}
+::-moz-placeholder {
+    font-family: sans-serif;
+}
+:-ms-input-placeholder {
+    font-family: sans-serif;
+}
+
+[ng-view].ng-enter{
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+[ng-view].ng-enter-active{
+    opacity: 1;
+}
+
+/*** effects ***/
+/* blur */
+[ng-view].ng-enter.blur{
+    filter:blur(3px);
+    -webkit-filter:blur(3px);
+    transition: filter 0.6s;
+}
+[ng-view].ng-enter-active.blur{
+    filter:none;
+}
+
+
+/* pop */
+.pop.ng-enter {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.pop.ng-enter {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.pop.ng-enter-active {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.pop.ng-leave-active {}
+
+.invalidField { border: solid 2px orangered }
+select.ng-invalid.ng-touched { border: solid 2px orangered }
+.select-input {
+	border: 1px solid #d2d3d4;
+	border-radius: 3px;
+	font-size: 15px;
+	padding: 10px;
+	width: 100%;
+	color: #86878a;
+}
+.cell-width{width:36%}
+
+
+/**** new style ***/
+.new .button {
+    margin-left: 350px;
+    background-color: #EE1C25;
+    color: #fff;
+    font-size: 13px;
+    width:140px;
+    line-height: 36px;
+    
+    -moz-border-radius: 3px;/*Firefox*/
+	-webkit-border-radius: 3px;/*Safari, Chrome*/
+	border-radius: 3px;
+}
+.new .blur1 {
+    filter: none;
+}
+
+.blue-circle {
+	width: 20px;
+	height: 21px;
+	display: inline-block;
+	border-radius: 12px;
+	line-height: 21px;
+	background: #8AD4F6;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	padding-right: 2px;
+	font-size: 9px;
+	margin: 0 10px 0 0;
+}
+
+/* AAL tool tip changes [START] */
+
+#verizon-plan-right-for-me {
+	position: absolute;
+	bottom: 13px;
+	left: -175px;
+}
+#how-much-data-tooltip {
+	position: absolute;
+	bottom: 14px;
+	left: -176px;
+}
+#can-change-mind-tooltip {
+	position: absolute;
+	bottom: 14px;
+	left: -174px;
+}
+#if-i-switch-tooltip {
+	position: absolute;
+	bottom: 15px;
+	left: -175px;
+}
+/* AAL tool tip changes [END] */
+
+.info-block {
+	background: #eee;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.info-block .info-icon {
+	background: #000;
+	color: #fff;
+	border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	font-weight: bold;
+	font-family: monospace;
+	float: left;
+	margin: 5px 0;
+}
+
+.info-block .info {
+	float: left;
+	width: 93%;
+	margin: 0;
+	padding: 2px 8px;
+	float: left;
+}
+
+/* tool tip changes */
+
+.container{position:relative;top:0;left:0;display:inline-block}
+.holder{position:relative;display:inline-block}
+.padding-right-5{padding-right:5px}
+.padding-left-5{padding-left:5px}
+.inline-tooltip{display:inline-block;padding: 0 20px 0 5px;width:0}
+
+.tip-text{padding:10px 10px 10px 0}
+.tooltipBody{position:absolute;width:350px}
+
+.left{margin-top:-1px;margin-left:22px}
+
+.bottomleft{text-align:left}
+.bottomright{text-align:right;margin-left: 20px;}
+.bottomcenter{text-align:center}
+
+.bodyleft {right:-95%;bottom:81%}
+.bodyright {left:-185%;bottom:81%}
+.bodycenter {bottom:81%;left:-165px}
+
+.bodybottomleft{right:-15px;top:70%;z-index:999}
+.bodybottomright{left:-27px;top:62%;z-index: 999}
+.bodybottomcenter{top: 70%;left:-163px;z-index: 999}
+
+/* tool tip changes */
+
+#back-bar .table-cell.red {height: 20px} /* footer should always be the same height regardless of the Previous button being visible or not */
+#back-bar .table-cell.red #previous {vertical-align: top;display:inline-block}
+#back-bar .back-caret {transform: rotate(180deg); -webkit-transform: rotate(180deg);width: 15px;height: 15px}
+
+/*Account Error Credit Card Page*/
+#error-credit-page .noCreditMsg{
+	display:block;
+	color:red;
+	font-family: Helvetica Neue;
+}
+
+#error-credit-page .checkSpan{
+	color:blue;
+	font-family: Helvetica Neue;
+	text-decoration:underline;
+}
+.text-small{font-size :12px}
+
+input[name=lastName],input[name=city],input[name=addressLine1] {text-transform:capitalize}
+input[name=state]{text-transform:uppercase}
+
+.sponsored-section{border-bottom:1px solid #d2d3d4;padding-bottom:15px;margin-bottom:10px}
+.button.align-center {margin: 0 auto}
+.padding0px15px{padding:0 15px}
+.button-width-217{width:217px}
+
+.zero-content-padding {padding:0}
+.promo p.ng-binding {padding: 10px 0;margin: 0}
+.promo .bottom-nav{padding-top: 20px}
