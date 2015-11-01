@@ -1,6 +1,8 @@
 language: java
 services:
   - mysql
+install:
+- travis_wait
 before_install:
 - mysql -e 'drop database if exists address_schema;'
 - mysql -e 'create database address_schema;'
