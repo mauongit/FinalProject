@@ -63,7 +63,7 @@ public class AppContextListener implements ServletContextListener {
 				List<String> groupingCityList = new ArrayList<String>();
 				if (Character.isDigit(possibleCharsListArray.get(arrayIndex))) {
 					ps = ((Connection) ctx.getAttribute("DBConnection"))
-							.prepareStatement("SELECT CONCAT(address, ', ',city) as address_city from address where address like '"
+							.prepareStatement("SELECT CONCAT(address, ',',city) as address_city from address where address like '"
 									+ possibleCharsListArray.get(arrayIndex)
 									+ "%' order by address asc");
 					//SELECT CONCAT(address, ', ',city) as address_city from address where address like '1%' order by address asc
@@ -78,7 +78,7 @@ public class AppContextListener implements ServletContextListener {
 				} else {
 					
 					 ps = ((Connection) ctx.getAttribute("DBConnection"))
-							.prepareStatement("select CONCAT(city, ', ', address) as city_address from address where ((city like '" 
+							.prepareStatement("select CONCAT(city, ',', address) as city_address from address where ((city like '" 
 +(possibleCharsListArray.get(arrayIndex)) + "%') OR (address like '"+(possibleCharsListArray
 											.get(arrayIndex))+"%'))");
 					//select city || ',      ' || address1 as city_address from store_locator_main where (upper(city) like upper('z') || '%') OR (upper(address1) like upper('z') || '%')
