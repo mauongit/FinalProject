@@ -76,7 +76,6 @@ public class AppContextListener implements ServletContextListener {
 								groupingAddressesList);
 					}
 				} else {
-					
 					 ps = ((Connection) ctx.getAttribute("DBConnection"))
 							.prepareStatement("select CONCAT(city, ',', address) as city_address from address where ((city like '" 
 +(possibleCharsListArray.get(arrayIndex)) + "%') OR (address like '"+(possibleCharsListArray
