@@ -1,7 +1,7 @@
 language: java
 services:
   - mysql
- deploy:
+deploy:
    edge: true
    provider: cloudfoundry
    username: neha.d.daga@gmail.com
