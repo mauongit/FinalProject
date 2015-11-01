@@ -19,6 +19,6 @@ deploy:
    password: vdsi2015
    api: https://api.run.pivotal.io
    organization: AddressValidationProj
-   space: staging
+   space: development
   
 
