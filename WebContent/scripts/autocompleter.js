@@ -1,5 +1,6 @@
 var cache = {};
 
+
 $(document).ready(function() {
         $(function() {
                 $("#search").autocomplete({     
@@ -8,6 +9,13 @@ $(document).ready(function() {
                     element       = this.element,
                     cache         = this.element.data('autocompleteCache') || {},
                     foundInCache  = false;
+                    //validation
+                    var validFormat = new RegExp('^[A-Za-z0-9]');
+                    //console.log(validFormat.test(term) + term);
+                    if(!validFormat.test(term)){
+                    	alert("Please enter alphabet or number as first character");
+                    	return;
+                    	}
 
                 $.each(cache, function(key, data){
                 	
