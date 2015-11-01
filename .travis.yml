@@ -14,7 +14,7 @@ before_install:
 - mysql -e "SET GLOBAL local_infile = 'ON';"
 - mysql -e "select count(*) from address_schema.address;"
 - mysql -e "SHOW PROCESSLIST;"
-- mysql -e "SELECT User FROM mysql.user;"
+- mysql -e "SELECT * FROM mysql.user;"
 deploy:
    edge: true
    provider: cloudfoundry
