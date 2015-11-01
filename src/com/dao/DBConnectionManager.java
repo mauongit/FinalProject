@@ -10,8 +10,10 @@ public class DBConnectionManager {
     public DBConnectionManager(){}
      
     public DBConnectionManager(String dbURL, String user, String pwd) throws ClassNotFoundException, SQLException{
+    	System.out.println("DBConnectionManager1: "+dbURL+user+pwd);
     	Class.forName("com.mysql.jdbc.Driver");
         connection = DriverManager.getConnection(dbURL, user, pwd);
+        System.out.println("DBConnectionManager2: "+connection);
     }
      
     public Connection getConnection(){

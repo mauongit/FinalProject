@@ -24,7 +24,7 @@ public class AppContextListener implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
 		long start = System.currentTimeMillis();
 		ServletContext ctx = servletContextEvent.getServletContext();
-		
+		System.out.println("AppContextListener: contextInitialized : Start");
 		// initialize DB Connection
 		String dbURL = ctx.getInitParameter("dbURL");
 		String user = ctx.getInitParameter("dbUser");
