@@ -6,8 +6,9 @@ before_install:
 - mysql -e 'create database address_schema;'
 - mysql -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('admin');"
 - mysql -e "SET PASSWORD FOR 'root'@'127.0.0.1' = PASSWORD('admin');"
+- mysql -e "SHOW GLOBAL VARIABLES LIKE 'local_infile';"
 - mysql -e "create table address_schema.address (address_id int(10) NOT NULL AUTO_INCREMENT, address varchar(200) NOT NULL, address2 varchar(200) DEFAULT NULL,city varchar(50) NOT NULL,state varchar(100) NOT NULL,zipcode varchar(10) DEFAULT NULL,last_update timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,PRIMARY KEY (address_id) ) ENGINE=InnoDB AUTO_INCREMENT=30000 DEFAULT CHARSET=utf8;"
-- mysql -e "--local-infile=1;"
+- mysql -e "SET GLOBAL local_infile = 'ON';"
 - mysql -e "load data local infile '/db/data/address.csv' into table address_schema.address;"
 deploy:
    edge: true
