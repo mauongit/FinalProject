@@ -18,7 +18,7 @@ deploy:
    username: neha.d.daga@gmail.com
    password: vdsi2015
    api: https://api.run.pivotal.io
-   organization: AddressValidation
+   organization: AddressValidationProj
    space: staging
   
 
