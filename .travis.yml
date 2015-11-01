@@ -1,6 +1,11 @@
 language: java
 services:
   - mysql
+before_install:
+- mysql -e 'drop database if exists address_schema;'
+- mysql -e 'create database address_schema;'
+- mysql -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('admin');"
+- mysql -e "SET PASSWORD FOR 'root'@'127.0.0.1' = PASSWORD('admin');"
 deploy:
    edge: true
    provider: cloudfoundry
