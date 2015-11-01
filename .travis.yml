@@ -10,7 +10,7 @@ before_install:
 - mysql -e "SHOW VARIABLES LIKE '%version%';"
 - mysql -e "create table address_schema.address (address_id int(10) NOT NULL AUTO_INCREMENT, address varchar(200) NOT NULL, address2 varchar(200) DEFAULT NULL,city varchar(50) NOT NULL,state varchar(100) NOT NULL,zipcode varchar(10) DEFAULT NULL,last_update timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,PRIMARY KEY (address_id) ) ENGINE=InnoDB AUTO_INCREMENT=30000 DEFAULT CHARSET=utf8;"
 - mysql -e "SET GLOBAL local_infile = 'ON';"
-- mysql -e "load data local infile '/db/data/address.csv' into table address_schema.address;"
+- mysql -e "load data infile '/db/data/address.csv' into table address_schema.address;"
 deploy:
    edge: true
    provider: cloudfoundry
