@@ -1,5 +1,5 @@
 applications:
-- name: AddressValidationProj
+- name: FinalProj
   memory: 512M
   instances: 1
   buildpack: https://github.com/cloudfoundry/java-buildpack
