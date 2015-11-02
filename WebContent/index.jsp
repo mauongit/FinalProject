@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<img alt="verizon" style="height:32px;margin-top:200px" src="/images/vzw-logo-156-130-c.jpg">
+<img alt="verizon" style="height:165px;" src="/images/team-logo-156-130-c.jpg">
 <div class="header">
         <h2>Please type below to search and validate the address</h2>
 </div>
