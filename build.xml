@@ -59,8 +59,7 @@
     </junit>
   </target>
   <target name="dist" depends="compile">
-    <mkdir dir="${dist}/lib"/>
-    <jar jarfile="${dist}/lib/AddressValidationProj.war" basedir="${build}"/>
+     <jar jarfile="${dist}/AddressValidationProj.war" basedir="${build}"/>
   </target>
 	<target name="clean">
 		<delete dir="dist" />
