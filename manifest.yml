@@ -4,3 +4,5 @@ applications:
   instances: 1
   buildpack: https://github.com/cloudfoundry/java-buildpack
   path: /home/travis/build/mauongit/FinalProject/dist/AddressValidationProj.war
+services:
+ - address_schema
