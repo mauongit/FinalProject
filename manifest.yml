@@ -1,5 +1,6 @@
 applications:
 - name: AddressValidationProj
-  memory: 1G
-buildpack: https://github.com/cloudfoundry/java-buildpack
-path: /home/travis/build/mauongit/FinalProject/dist/AddressValidationProj.war
+  memory: 512M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  path: /home/travis/build/mauongit/FinalProject/dist/AddressValidationProj.war
