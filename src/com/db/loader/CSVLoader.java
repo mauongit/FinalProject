@@ -35,7 +35,7 @@ public class CSVLoader {
 	public CSVLoader(Connection connection) {
 		this.connection = connection;
 		//Set default separator
-		this.seprator = ',';
+		this.seprator = ';';
 	}
 	
 	/**
@@ -99,6 +99,7 @@ public class CSVLoader {
 						"state text,"+
 						"zipcode text,"+
 						"last_update text)");
+				con.commit();
 			}
 			if(truncateBeforeLoad) {
 				//delete data from table before loading csv

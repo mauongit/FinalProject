@@ -14,7 +14,7 @@ public class Load {
 		try {
 
 			CSVLoader loader = new CSVLoader(connection);
-			loader.loadCSV("D:\\address.csv", "CUSTOMER", true,false);
+			loader.loadCSV("/var/lib/mysql/db/data/address.csv", "address", true,false);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
