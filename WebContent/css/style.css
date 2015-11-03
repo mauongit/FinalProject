@@ -1,8 +1,3 @@
-@font-face {
-    font-family: VerizonApexBook;
-    src: url('../fonts/VerizonApex-Book.otf');
-}
-
 @media only screen and (orientation : landscape) {
     html body {
 		/*margin: 0 245px;*/
@@ -23,7 +18,6 @@
 */
 
 body {
-	font-family: VerizonApexBook;
 	font-size: 15px;
 	color: #333333;
     display: table;
@@ -119,7 +113,6 @@ body {
 
 .button {
 	-webkit-appearance: none;
-	font-family: VerizonApexBook;
 	font-size: 17px;
 	color: #fff;
 	background: #ed1c24;
@@ -464,11 +457,11 @@ body {
 	padding-top: 3px;
 }
 
-#my-verizon-tabs {
+#my-whatever-tabs {
 	padding: 0 60px;
 }
 
-#my-verizon-tabs .tab-item {
+#my-whatever-tabs .tab-item {
 	width: 50%;
 }
 
@@ -504,7 +497,7 @@ body {
 	padding-top: 10px;
 }
 
-#my-verizon-more-tabs {
+#my-whatever-more-tabs {
 	padding: 0 60px;
 }
 
@@ -587,7 +580,7 @@ body {
 	margin-left: 19px;
 }
 
-#why-verizon-tooltip {
+#why-whatever-tooltip {
 	position: absolute;
 	top: -160px;
 	left: 60px;
@@ -611,13 +604,13 @@ body {
 	left: 10px;
 }
 
-#GB-of-free { /*verizon-cloud-tooltip*/
+#GB-of-free { /*whatever-cloud-tooltip*/
 	position: absolute;
 	top: -65px;
 	left: 86px;
 }
 
-#verizon-cloud-arrow {
+#whatever-cloud-arrow {
 	margin-right: 23px;
 }
 
@@ -639,7 +632,7 @@ body {
 	left: 30px;
 }
 
-#myverizon-tooltip {
+#mywhatever-tooltip {
 	position: absolute;
 	top: 57px;
 	left: 50px;
@@ -928,7 +921,7 @@ select.ng-invalid.ng-touched { border: solid 2px orangered }
 
 /* AAL tool tip changes [START] */
 
-#verizon-plan-right-for-me {
+#whatever-plan-right-for-me {
 	position: absolute;
 	bottom: 13px;
 	left: -175px;

@@ -92,6 +92,7 @@ public class CSVLoader {
 			ps = con.prepareStatement(query);
 			if(createBeforeLoad) {
 				//delete data from table before loading csv
+				System.out.println("creating table");
 				con.createStatement().execute("CREATE TABLE "+tableName+"(address_id text,"+
 						"address text,"+
 						"address2 text,"+
@@ -100,12 +101,14 @@ public class CSVLoader {
 						"zipcode text,"+
 						"last_update text)");
 				con.commit();
+				System.out.println("commit done");
 			}
 			if(truncateBeforeLoad) {
 				//delete data from table before loading csv
 				con.createStatement().execute("DELETE FROM " + tableName);
 			}
-
+			System.out.println("**executing select statement"+con.createStatement().execute("select count(*) FROM " + tableName));
+			
 			final int batchSize = 1000;
 			int count = 0;
 			Date date = null;
