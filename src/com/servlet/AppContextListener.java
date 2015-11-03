@@ -17,6 +17,7 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 import com.dao.DBConnectionManager;
+import com.db.loader.Load;
 
 @WebListener
 public class AppContextListener implements ServletContextListener {
@@ -35,6 +36,8 @@ public class AppContextListener implements ServletContextListener {
 					dbURL, user, pwd);
 			ctx.setAttribute("DBConnection", connectionManager.getConnection());
 			System.out.println("TEST DB Connection initialized successfully.");
+			Load fileLoad = new Load();
+			fileLoad.fileUpload(connectionManager.getConnection());
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {

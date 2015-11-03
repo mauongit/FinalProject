@@ -6,15 +6,15 @@
 </welcome-file-list>
 <context-param>
     <param-name>dbUser</param-name>
-    <param-value>be4a2ab540791f</param-value>
+    <param-value>root</param-value>
   </context-param>
   <context-param>
     <param-name>dbPassword</param-name>
-    <param-value>70457e39</param-value>
+    <param-value>admin</param-value>
   </context-param>
   <context-param>
     <param-name>dbURL</param-name>
-    <param-value>jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/ad_6505094e04c9322</param-value>
+    <param-value>jdbc:mysql://localhost:4306/address_schema</param-value>
   </context-param>
 <servlet>
   <servlet-name>SearchController</servlet-name>
