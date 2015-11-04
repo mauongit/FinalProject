@@ -19,7 +19,7 @@ public class Controller extends HttpServlet {
 
 		response.setContentType("application/json");
 		try {
-			String term = request.getParameter("term");
+			String term = request.getParameter("term").toLowerCase();
 			DataDao dataDao = new DataDao();
 			List<String> addressVOList = dataDao.getFrameWork(request,
 					response, term);

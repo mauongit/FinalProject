@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.Date;
 
 import org.apache.commons.lang.StringUtils;
@@ -90,7 +91,7 @@ public class CSVLoader {
 			con = this.connection;
 			con.setAutoCommit(false);
 			ps = con.prepareStatement(query);
-			if(createBeforeLoad) {
+			if(createBeforeLoad) {/*
 				//delete data from table before loading csv
 				System.out.println("creating table");
 				con.createStatement().execute("CREATE TABLE "+tableName+"(address_id text,"+
@@ -102,14 +103,17 @@ public class CSVLoader {
 						"last_update text)");
 				con.commit();
 				System.out.println("commit done");
-			}
+			*/}
 			if(truncateBeforeLoad) {
 				//delete data from table before loading csv
-				con.createStatement().execute("DELETE FROM " + tableName);
+				//String deletequery = "DELETE FROM " + tableName +" where address_id > '20000'";
+				//con.createStatement().execute(deletequery);
+				//con.commit();
 			}
-			System.out.println("**executing select statement"+con.createStatement().execute("select count(*) FROM " + tableName));
+			//System.out.println("**Deleted From Table executing select statement");
 			
-			final int batchSize = 1000;
+			
+			final int batchSize = 2000;
 			int count = 0;
 			Date date = null;
 			while ((nextLine = csvReader.readNext()) != null) {
@@ -125,14 +129,14 @@ public class CSVLoader {
 							ps.setString(index++, string);
 						}
 					}
-					ps.addBatch();
+					//ps.addBatch();
 				}
 				if (++count % batchSize == 0) {
-					ps.executeBatch();
+					//ps.executeBatch();
 				}
 			}
-			ps.executeBatch(); // insert remaining records
-			con.commit();
+			//ps.executeBatch(); // insert remaining records
+			//con.commit();
 		} catch (Exception e) {
 			con.rollback();
 			e.printStackTrace();
@@ -141,11 +145,22 @@ public class CSVLoader {
 							+ e.getMessage());
 		} finally {
 			if (null != ps)
-				ps.close();
-			if (null != con)
-				con.close();
+				//ps.close();
+			if (null != con){
+				
+				PreparedStatement ps1= con.prepareStatement("select * from "+ tableName );
+				System.out.println("Record Count *************************** ");
+				ResultSet rs1 = ps1.executeQuery();
+				int sizetest = 0;
+				 while(rs1.next()){
+					 sizetest++;
+				 }
+						
+				System.out.println("COUNT ++++++++++++++++++++++++++++++++ "+ sizetest);
+			}
+				//con.close();
 
-			csvReader.close();
+			//csvReader.close();
 		}
 	}
 

@@ -13,9 +13,10 @@
 
 </head>
 <body>
-<img alt="verizon" style="height:165px;" src="/images/team-logo-156-130-c.jpg">
+<img style="height:165px;" src="/images/team-logo-156-130-c.jpg">
+<h1 style="position: absolute;top: 50px;left: 36%;font-weight: bold;font-family: sans-serif;">team</h1>
 <div class="header">
-        <h2>Please type below to search and validate the address</h2>
+        <h2>Please type below to search the address </h2>
 </div>
 <span id="erroMessage" style="display:none;color:red">Please enter alphabet or number as the first character</span>
 <br />

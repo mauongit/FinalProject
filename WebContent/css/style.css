@@ -29,6 +29,13 @@ body {
 	display: table;
 	width: 100%;
 }
+h1.team {
+	position: absolute;
+	top: 50px;
+	left: 36%;
+	font-weight: bold;
+	font-family: sans-serif;
+}
 
 .table-row {
 	display: table-row;

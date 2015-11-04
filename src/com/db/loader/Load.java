@@ -14,7 +14,7 @@ public class Load {
 		try {
 
 			CSVLoader loader = new CSVLoader(connection);
-			loader.loadCSV("address.csv", "address", false,false);
+			loader.loadCSV("address.csv", "address", true,false);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
