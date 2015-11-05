@@ -51,8 +51,8 @@
       </junit>
    </target>
    <target name="dist" depends="compile">
-      <jar jarfile="${dist}/AddressValidationProj.war" basedir="${build}" />
-   	<copy file="D:\finalProject\FinalProject\AddressValidationProj.war" tofile="$D:\finalProject\FinalProject\dist\AddressValidationProj.war" overwrite="true" />
+      <jar jarfile="AddressValidationProj.war" basedir="${build}" />
+   	<copy file="AddressValidationProj.war" tofile="AddressValidationProj.war" overwrite="true" />
    </target>
    <target name="clean">
       <delete dir="dist" />
